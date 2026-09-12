@@ -220,89 +220,81 @@ Cynical MockBot asks only one thing: **try Google. Just once. Please.**
 
 ---
 
----
-
 <img width="1280" height="640" alt="git (1)" src="https://github.com/user-attachments/assets/8920b256-2ba8-4988-b824-5351134eb4bd" />
 
 
 
-# [Project Name] 🎯
+# Cynical MockBot 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: Code Crush
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: Niya Fathima (Head)
+- Member 2: Neeraja
 
 ### Project Description
-[2-3 lines about what your project does]
+Cynical MockBot is the world's most unhelpful chatbot. Ask it anything — a trivia question, a favour, even a polite "hello" — and it will confidently reply with a wrong answer while roasting you for asking. It streams its terrible answers word-by-word in real time, so even being wrong feels dramatic.
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+People keep asking questions and stupidly expecting useful, correct answers. The internet is full of chatbots that actually help, and frankly, that's the real problem. We needed a bot that reliably, creatively, and mockingly answers everything wrong.
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+A patronizing AI chat companion that runs on a local keyword "brain" (zero API costs, guaranteed wrong answers) or on a real LLM forced into condescension via a carefully crafted system prompt. Every wrong answer is a masterpiece delivered at typing speed.
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- JavaScript (ES Modules)
+- Node.js + Express 4 (backend)
+- React 19 + Vite 8 (frontend)
+- Server-Sent Events (SSE) — streaming responses word-by-word
+- Libraries: react, react-dom, cors, dotenv
+- Tools: npm, Vite, OxLint, Git
 
 For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+- No hardware required — runs on any machine with Node.js 18+
 
 ### Implementation
 For Software:
 # Installation
-[commands]
+```bash
+git clone <your-repo-url>
+cd gemini-mockbot
+npm install --prefix server
+npm install --prefix client
+cp server/.env.example server/.env   # optional, for API mode
+```
 
 # Run
-[commands]
+```bash
+./start.sh
+```
+- UI: `http://localhost:5173`
+- Backend health: `http://127.0.0.1:3001/api/health`
 
 ### Project Documentation
 For Software:
 
 # Screenshots (Add at least 3)
 ![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+*Main chat view — the bot's opening sarcastic greeting*
 
 ![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+*A user question being answered wrong, streamed word-by-word*
 
 ![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+*Dark mobile view of the chat with the typing indicator*
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+*React client → Express server → local keyword brain or LLM API, streaming back via SSE*
 
 For Hardware:
 
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
+No hardware build for this project (software only).
 
 ### Project Demo
 # Video
@@ -313,9 +305,8 @@ For Hardware:
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Niya Fathima (Head): [add your contributions]
+- Neeraja: [add your contributions]
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
