@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Cynical MockBot
 
 > Powered by Gemini. Fueled by contempt. Answers are guaranteed wrong.
@@ -323,7 +322,3 @@ Made with ❤️ at TinkerHub Useless Projects
 
 ![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
 ![Static Badge](https://img.shields.io/badge/UselessProjects--26-26?link=https%3A%2F%2Ftinkerhub.org%2Fevents%2F1M8ORET9A1%2Fuseless-projects-3.0)
-
-
-
->>>>>>> 69311fd79051eb09e3b7ab1c8ad147682aabe197
