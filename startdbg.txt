@@ -1,0 +1,80 @@
++ set -e
+++ dirname start.sh
++ cd .
++ kill_any index.js
++ ps -A -o pid,comm,args
++ grep -E index.js
++ grep -v grep
++ awk '{print $1}'
++ read -r pid
++ '[' 21368 '!=' 22482 ']'
++ kill 21368
++ read -r pid
++ kill_any vite
++ ps -A -o pid,comm,args
++ grep -E vite
++ grep -v grep
++ read -r pid
++ awk '{print $1}'
++ '[' 21445 '!=' 22482 ']'
++ kill 21445
++ read -r pid
++ '[' 21843 '!=' 22482 ']'
++ kill 21843
++ read -r pid
++ cd server
++ setsid node index.js
++ sleep 1
++ cd client
++ setsid npx vite --host
++ echo 'MockBot is starting...'
+MockBot is starting...
++ echo '  Backend: http://127.0.0.1:3001/api/health'
+  Backend: http://127.0.0.1:3001/api/health
++ echo '  UI:      http://127.0.0.1:5173/'
+  UI:      http://127.0.0.1:5173/
+++ seq 1 20
++ for _ in $(seq 1 20)
++ curl -s -m 2 http://127.0.0.1:3001/api/health
++ sleep 0.5
++ for _ in $(seq 1 20)
++ curl -s -m 2 http://127.0.0.1:3001/api/health
++ echo '  Backend ready ✓'
+  Backend ready ✓
++ break
+++ seq 1 20
++ for _ in $(seq 1 20)
++ curl -s -m 2 http://127.0.0.1:5173/
++ sleep 0.5
++ for _ in $(seq 1 20)
++ curl -s -m 2 http://127.0.0.1:5173/
++ sleep 0.5
++ for _ in $(seq 1 20)
++ curl -s -m 2 http://127.0.0.1:5173/
++ sleep 0.5
++ for _ in $(seq 1 20)
++ curl -s -m 2 http://127.0.0.1:5173/
++ sleep 0.5
++ for _ in $(seq 1 20)
++ curl -s -m 2 http://127.0.0.1:5173/
++ sleep 0.5
++ for _ in $(seq 1 20)
++ curl -s -m 2 http://127.0.0.1:5173/
++ sleep 0.5
++ for _ in $(seq 1 20)
++ curl -s -m 2 http://127.0.0.1:5173/
++ sleep 0.5
++ for _ in $(seq 1 20)
++ curl -s -m 2 http://127.0.0.1:5173/
++ sleep 0.5
++ for _ in $(seq 1 20)
++ curl -s -m 2 http://127.0.0.1:5173/
++ sleep 0.5
++ for _ in $(seq 1 20)
++ curl -s -m 2 http://127.0.0.1:5173/
++ echo '  UI ready ✓'
+  UI ready ✓
++ break
++ echo 'Open http://localhost:5173 in your browser. Good luck. You'\''ll need it.'
+Open http://localhost:5173 in your browser. Good luck. You'll need it.
+Terminated                 setsid node index.js > server.log 2>&1
